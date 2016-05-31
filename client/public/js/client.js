@@ -1,4 +1,5 @@
 require('bootstrap/dist/css/bootstrap.css')
+require('!style!css!../styles/main.css')
 
 var angular = require('angular')
 var mainController = require('./controllers/main')

@@ -5,7 +5,7 @@ module.exports = function($scope, $rootScope, $http) {
     url = 'http://localhost:1337/app'
   }
 
-  $scope.text = 'Location'
+  $scope.text = ''
 	$scope.submit = function () {
 		if ($scope.text) {
 			$http.get(url + '/' + $scope.text).success(function (data) {

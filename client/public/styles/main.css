@@ -1,0 +1,16 @@
+body{
+	background-color: #DDD;
+}
+
+h1 {
+	color: #343434;
+}
+
+form {
+	margin: 20px auto;
+}
+
+input[type='text'] {
+	margin: 0 20px;
+	width: 250px !important;
+}

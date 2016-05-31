@@ -2,13 +2,25 @@
   <center>No Data</center>
 </div>
 <div ng-if="results.length>0 && dataLoaded">
-  <h2 ng-bind="title"></h2>
-  <ul class="list-unstyled issues">
-    <li class="result" ng-repeat="result in results">
-      <dl class="dl-horizontal">
-        <dt>Data</dt>
-        <dd>{{ result.name }}</dd>
-      </dl>
-    </li>
-  </ul>
+	<center>
+    <ul class="list-unstyled list-group results">
+      <li class="result list-group-item" ng-repeat="result in results">
+        <dl class="dl-horizontal">
+<!--           <dt>{{result.name}}</dt> -->
+          <dd>
+            <table class="table table-hover">
+              <tbody>
+                <tr class="" style="text-align:left;">{{ result.name }}</tr>
+                <tr>
+                  <td>
+                    {{ result.id }}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </dd>
+        </dl>
+      </li>
+    </ul>
+  </center>
 </div>
