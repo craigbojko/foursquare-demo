@@ -19,5 +19,11 @@
     "express": "^4.13.4",
     "node-foursquare": "^0.3.0",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "grunt-concurrent": "^2.3.0",
+    "grunt-nodemon": "^0.4.2",
+    "grunt-standard": "^2.0.0",
+    "grunt-webpack": "^1.0.11"
   }
 }

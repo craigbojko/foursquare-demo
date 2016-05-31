@@ -24,7 +24,7 @@ var foursquare = Foursquare({
 })
 
 app.get('/', function (req, res) {
-  res.redirect(301, 'http://localhost:' + config.port + '/login');
+  res.redirect(301, 'http://localhost:' + config.port + '/login')
 })
 
 app.get('/login', function(req, res) {
@@ -40,7 +40,7 @@ app.get('/fsqRedirect', function (req, res) {
       res.send('An error was thrown: ' + error.message)
     } else {
       ac = accessToken
-      res.redirect(301, 'http://localhost:' + config.port + '/app');
+      res.redirect(301, 'http://localhost:' + config.port + '/app')
     }
   })
 })
@@ -58,7 +58,7 @@ app.get('/app', function (req, res) {
   })
 })
 
-app.use('/client', express.static(path.join(__dirname, './client')));
+app.use('/client', express.static(path.join(__dirname, './client')))
 
 app.listen(config.port)
 console.log('API Magic happens on port ' + config.port)
