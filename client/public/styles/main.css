@@ -14,3 +14,15 @@ input[type='text'] {
 	margin: 0 20px;
 	width: 250px !important;
 }
+
+.col-0-left {
+	width: 50%;
+}
+
+.col-0-right {
+	width: 50%;
+}
+
+.col-1-left {
+	width: 100px;
+}

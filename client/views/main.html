@@ -5,21 +5,31 @@
 	<center>
     <ul class="list-unstyled list-group results">
       <li class="result list-group-item" ng-repeat="result in results">
-        <dl class="dl-horizontal">
-<!--           <dt>{{result.name}}</dt> -->
-          <dd>
-            <table class="table table-hover">
-              <tbody>
-                <tr class="" style="text-align:left;">{{ result.name }}</tr>
-                <tr>
-                  <td>
-                    {{ result.id }}
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </dd>
-        </dl>
+        <table class="table table-bordered table-hover">
+          <caption>{{ result.name }}</caption>
+          <tbody>
+            <tr>
+              <td class="col-0-left">
+                <table>
+                  <tbody>
+                    <tr><td class="col-1-left">Street:</td><td>{{result.location.address}}</td></tr>
+                    <tr><td class="col-1-left">City:</td><td>{{result.location.city}}</td></tr>
+                    <tr><td class="col-1-left">State:</td><td>{{result.location.state}}</td></tr>
+                    <tr><td class="col-1-left">Post Code:</td><td>{{result.location.postalCode}}</td></tr>
+                    <tr><td class="col-1-left">Country:</td><td>{{result.location.country}}</td></tr>
+                  </tbody>
+                </table>
+              </td>
+              <td>
+                <table>
+                  <tbody>
+                    <tr><td>URL:</td><td><a href='{{result.url}}'>{{result.url}}</a></td></tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </li>
     </ul>
   </center>
