@@ -1,4 +1,7 @@
-<div ng-if="results.length>0">
+<div ng-if="!dataLoaded">
+  <center>No Data</center>
+</div>
+<div ng-if="results.length>0 && dataLoaded">
   <h2 ng-bind="title"></h2>
   <ul class="list-unstyled issues">
     <li class="result" ng-repeat="result in results">

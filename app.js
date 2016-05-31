@@ -45,14 +45,19 @@ app.get('/fsqRedirect', function (req, res) {
   })
 })
 
-app.get('/app', function (req, res) {
-  foursquare.Venues.search(null, null, 'Sidcup', {}, ac, function (err, results) {
-    console.log('SEARCH')
+app.get('/app/:location', function (req, res) {
+  var params = req.params
+  var location = params && params.location
+  if (!location) { // hack to cover no provided location
+    res.send({})
+  }
+
+  foursquare.Venues.search(null, null, location, {}, ac, function (err, results) {
+    console.log('SEARCH: ', location)
     if (err) {
       console.error(err)
       res.send(500)
     } else{
-      console.log('OK')
       res.send(results)
     }
   })
