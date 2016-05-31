@@ -21,9 +21,13 @@
     "path": "^0.12.7"
   },
   "devDependencies": {
+    "grunt": "^1.0.1",
     "grunt-concurrent": "^2.3.0",
     "grunt-nodemon": "^0.4.2",
     "grunt-standard": "^2.0.0",
-    "grunt-webpack": "^1.0.11"
+    "grunt-webpack": "^1.0.11",
+    "time-grunt": "^1.3.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
   }
 }
