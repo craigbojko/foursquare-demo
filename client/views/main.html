@@ -1,0 +1,11 @@
+<div ng-if="results.length>0">
+  <h2 ng-bind="title"></h2>
+  <ul class="list-unstyled issues">
+    <li class="result" ng-repeat="result in results">
+      <dl class="dl-horizontal">
+        <dt>Data</dt>
+        <dd>{{ result.name }}</dd>
+      </dl>
+    </li>
+  </ul>
+</div>
