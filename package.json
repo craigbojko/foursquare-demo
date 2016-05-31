@@ -1,0 +1,14 @@
+{
+  "name": "foursquare-venues",
+  "version": "1.0.0",
+  "description": "Foursquare venue API demo for search - query and display results",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "npm": {
+  	"start": "node app"
+  },
+  "author": "Craig Bojko",
+  "license": "ISC"
+}
