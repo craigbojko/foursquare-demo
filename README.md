@@ -1,6 +1,7 @@
 # foursquare-demo
 
 Demo was built with node v5.5.0, Angular v1.5 & Chrome v50
+
 Requires npm and nodeJS as system dependancies
 
 # To run:
@@ -9,6 +10,8 @@ Requires npm and nodeJS as system dependancies
 `npm install`
 
 `npm start`
+
+The navigate to `http://localhost:1337/`
 
 # About
 - Demo is nodeJS/express based web application - backend requires in foursquare npm library for authentication and API interaction

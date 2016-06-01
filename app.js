@@ -40,7 +40,7 @@ app.get('/fsqRedirect', function (req, res) {
       res.send('An error was thrown: ' + error.message)
     } else {
       ac = accessToken
-      res.redirect(301, 'http://localhost:' + config.port + '/app')
+      res.redirect(301, 'http://localhost:' + config.port + '/client/')
     }
   })
 })
