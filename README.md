@@ -1,10 +1,13 @@
 # foursquare-demo
 
 Demo was built with node v5.5.0, Angular v1.5 & Chrome v50
+Requires npm and nodeJS as system dependancies
 
 # To run:
 `git clone https://github.com/pixelventures/foursquare-demo.git .`
+
 `npm install`
+
 `npm start`
 
 # About
