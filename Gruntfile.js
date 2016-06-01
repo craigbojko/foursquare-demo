@@ -58,6 +58,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-standard')
   
   grunt.registerTask('lint', ['standard'])
-  grunt.registerTask('develop', ['concurrent:dev'])
-  grunt.registerTask('compile', ['less', 'webpack'])
+  grunt.registerTask('build', ['webpack'])
+  grunt.registerTask('run', ['concurrent:dev'])
 }

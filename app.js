@@ -56,7 +56,7 @@ app.get('/app/:location', function (req, res) {
     console.log('SEARCH: ', location)
     if (err) {
       console.error(err)
-      res.send(500)
+      res.send({})
     } else{
       res.send(results)
     }
